@@ -48,13 +48,13 @@ The method list of RBAC Manager
 | removeAllRoles    | | |
 | removeAllAssignments | | |
 |                | _getItem_   | |
-|                | _getItems_   | |
+|                | _getItems_   | # getItems|
 |                | _addItem_    | |
 |                | _addRule_    | # addRule |
 |                | _removeItem_ | |
-|                | _removeRule_ |  |
-|                | updateItem abstract| |
-|                | updateRule abstract| |
+|                | _removeRule_ | # removeRule |
+|                | _updateItem_ | |
+|                | _updateRule_ | # updateRule |
 |                | createRule | |
 |                | setDefaultRoles |  |
 |                | getDefaultRoles |  |
@@ -73,5 +73,7 @@ The method list of RBAC Manager
 |                |               | # addItem |
 |                |               | # removeItem |
 |                |               | # updateItem |
+|                |               | # populateItem |
+
 
 
