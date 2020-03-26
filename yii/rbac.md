@@ -17,15 +17,15 @@ The method list of RBAC Manager
 
 | Interface | BaseManager |
 |-----------|-------------|
-| add       |             | 
-| remove    | |
-| update    | |
-| getRole   | |
-| getRoles  | |
+| add       | add         | 
+| remove    | remove |
+| update    | update |
+| getRole   | getRole |
+| getRoles  | getRoles |
 | getRolesByUse | |
 | getChildRoles | |
-| getPermission | |
-| getPermissions | |
+| getPermission | getPermission |
+| getPermissions | getPermissions |
 | getPermissionsByRole | |
 | getPermissionsByUser | |
 | getRule | |
@@ -47,5 +47,22 @@ The method list of RBAC Manager
 | removeAllPermissions | |
 | removeAllRoles    | |
 | removeAllAssignments | |
-|  | getItem |
-|  | getItems |
+|  | getItem abstract|
+|  | getItems abstract|
+|  | addItem abstract|
+|  | addRule abstract|
+|  | removeItem abstract|
+|  | removeRule abstract| 
+|  | updateItem abstract|
+|  | updateRule abstract|
+|  | createRule |
+|  | setDefaultRoles | 
+|  | getDefaultRoles |
+|  | getDefaultRoleInstances |
+|  | executeRule protected |
+|  | hasNoAssignments protected |
+|  | isPermission protected | 
+|  | isRole protected |
+|  | isItem protected |
+|  | isRule protected |
+|  | createItemRuleIfNotExist protected | 
