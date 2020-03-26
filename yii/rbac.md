@@ -15,34 +15,36 @@ Next, following topic is for Yii3
 
 The method list of RBAC Manager
 
-| Interface | BaseManager
-| add       |     | 
-| remove    |
-| update |
-| getRole |
-| getRoles |
-| getRolesByUse |
-| getChildRoles |
-| getPermission |
-| getPermissions |
-| getPermissionsByRole |
-| getPermissionsByUser |
-| getRule |
-| getRules |
-| canAddChild |
-| addChild |
-| removeChild
-| removeChildren
-| hasChild
-| getChildren
-| assign
-| revoke
-| revokeAll
-| getAssignment
-hasAssignments
-getAssignments
-getUserIdsByRole
-removeAll
-removeAllPermissions
-removeAllRoles
-removeAllAssignments
+| Interface | BaseManager |
+|-----------|-------------|
+| add       |             | 
+| remove    | |
+| update | |
+| getRole | |
+| getRoles | |
+| getRolesByUse | |
+| getChildRoles | |
+| getPermission | |
+| getPermissions | |
+| getPermissionsByRole | |
+| getPermissionsByUser | |
+| getRule | |
+| getRules | |
+| canAddChild | |
+| addChild | |
+| removeChild | |
+| removeChildren | |
+| hasChild | |
+| getChildren | |
+| assign | |
+| revoke | |
+| revokeAll | |
+| getAssignment | |
+| hasAssignments  | |
+| getAssignments  | |
+| getUserIdsByRole | |
+| removeAll        | |
+| removeAllPermissions | |
+| removeAllRoles    | |
+| removeAllAssignments | |
+|----------------------|----------|
