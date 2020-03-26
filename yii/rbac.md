@@ -31,41 +31,47 @@ The method list of RBAC Manager
 | getRule        |                | |
 | getRules       |                | |
 | canAddChild    |                | |
-| addChild | | |
-| removeChild | | |
+| addChild       | | |
+| removeChild    | | |
 | removeChildren | | |
-| hasChild | | |
-| getChildren | | |
-| assign | | |
-| revoke | | |
-| revokeAll | | |
-| getAssignment | | |
-| hasAssignments  | | |
-| getAssignments  | | |
+| hasChild       | | |
+| getChildren    | | |
+| assign         | | |
+| revoke         | | |
+| revokeAll      | | |
+| getAssignment  | | |
+| hasAssignments | | |
+| getAssignments | | |
 | getUserIdsByRole | | |
 | removeAll        | | |
 | removeAllPermissions | | |
 | removeAllRoles    | | |
 | removeAllAssignments | | |
-|  | getItem abstract| |
-|  | getItems abstract| |
-|  | addItem abstract| |
-|  | addRule abstract| |
-|  | removeItem abstract| |
-|  | removeRule abstract|  |
-|  | updateItem abstract| |
-|  | updateRule abstract| |
-|  | createRule | |
-|  | setDefaultRoles |  |
-|  | getDefaultRoles |  |
-|  | getDefaultRoleInstances | |
-|  | executeRule protected | |
-|  | hasNoAssignments protected | |
-|  | isPermission protected |  |
-|  | isRole protected | |
-|  | isItem protected | |
-|  | isRule protected | |
-|  | createItemRuleIfNotExist protected |  |
-| | | userHasPermission |
-| | | checkAccessFromCache protected |
+|                | _getItem_   | |
+|                | _getItems_   | |
+|                | _addItem_    | |
+|                | _addRule_    | # addRule |
+|                | _removeItem_ | |
+|                | _removeRule_ |  |
+|                | updateItem abstract| |
+|                | updateRule abstract| |
+|                | createRule | |
+|                | setDefaultRoles |  |
+|                | getDefaultRoles |  |
+|                | getDefaultRoleInstances | |
+|                | # executeRule | |
+|                | # hasNoAssignments | |
+|                | # isPermission |  |
+|                | # isRole | |
+|                | # isItem  | |
+|                | # isRule  | |
+|                | # createItemRuleIfNotExist  |  |
+|                |               |   userHasPermission |
+|                |               | # checkAccessFromCache |
+|                |               | # checkAccessRecursive |
+|                |               | # getItem |
+|                |               | # addItem |
+|                |               | # removeItem |
+|                |               | # updateItem |
+
 
