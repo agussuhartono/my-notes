@@ -19,9 +19,9 @@ The method list of RBAC Manager
 |-----------|-------------|
 | add       |             | 
 | remove    | |
-| update | |
-| getRole | |
-| getRoles | |
+| update    | |
+| getRole   | |
+| getRoles  | |
 | getRolesByUse | |
 | getChildRoles | |
 | getPermission | |
@@ -47,4 +47,5 @@ The method list of RBAC Manager
 | removeAllPermissions | |
 | removeAllRoles    | |
 | removeAllAssignments | |
-|----------------------|----------|
+|  | getItem |
+|  | getItems |
