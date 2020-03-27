@@ -15,79 +15,82 @@ Next, following topic is for Yii3
 
 The method list of RBAC Manager
 
-| Interface      | BaseManager    | DbManager |
-|----------------|----------------|-----------|
-| add            | add            | |
-| remove         | remove         | |
-| update         | update         | |
-| getRole        | getRole        | |
-| getRoles       | getRoles       | |
-| getRolesByUse  |                | |
-| getChildRoles  |                | |
-| getPermission  | getPermission  | |
-| getPermissions | getPermissions | |
-| getPermissionsByRole |          | |
-| getPermissionsByUser |          | |
-| getRule        |                | getRule |
-| getRules       |                | getRules |
-| canAddChild    |                | canAddChild |
-| addChild       |                | addChild |
-| removeChild    |                | removeChild |
-| removeChildren |                | removeChildren |
-| hasChild       |                | hasChild |
-| getChildren    |                | getChildren |
-| assign         |                | assign |
-| revoke         |                | revoke |
-| revokeAll      |                | revokeAll |
-| getAssignment        |          | getAssignment |
-| hasAssignments       |          | getAssignments |
-| getAssignments       |          | |
-| getUserIdsByRole     |          | getUserIdsByRole |
-| removeAll            |          | removeAll |
-| removeAllPermissions |          | removeAllPermissions |
-| removeAllRoles       |          | removeAllRoles |
-| removeAllAssignments |          | removeAllAssignments |
-|                | _getItem_      |           |
-|                | _getItems_     | # getItems|
-|                | _addItem_      |           |
-|                | _addRule_      | # addRule |
-|                | _removeItem_   |           |
-|                | _removeRule_   | # removeRule |
-|                | _updateItem_   |              |
-|                | _updateRule_   | # updateRule |
-|                | createRule     | |
-|                | setDefaultRoles |  |
-|                | getDefaultRoles |  |
-|                | getDefaultRoleInstances     |  |
-|                | # executeRule               |  |
-|                | # hasNoAssignments          |  |
-|                | # isPermission              |  |
-|                | # isRole                    |  |
-|                | # isItem                    |  |
-|                | # isRule                    |  |
-|                | # createItemRuleIfNotExist  |  |
-|                |               |   userHasPermission |
-|                |               | # checkAccessFromCache |
-|                |               | # checkAccessRecursive |
-|                |               | # getItem              |
-|                |               | # addItem              |
-|                |               | # removeItem           |
-|                |               | # updateItem           |
-|                |               | # populateItem         |
-|                |               | getRolesByUser         |
-|                |               | getChildRoles          |
-|                |               | getPermissionsByRole   |
-|                |               | getPermissionsByUser   |
-|                |               | # getDirectPermissionsByUser     |
-|                |               | # getInheritedPermissionsByUser  |
-|                |               | # getChildrenList                |
-|                |               | # getChildrenRecursive           |
-|                |               | # detectLoop           |
-|                |               | removeAllItems         |
-|                |               | removeAllRules         |
-|                |               | invalidateCache        |
-|                |               | loadFromCache          |
-|                |               | - isEmptyUserId        |
+| Interface            | BaseManager      | DbManager      |
+|----------------      |----------------  |-----------     |
+| add                  | add              |                |
+| remove               | remove           |                |
+| update               | update           |                |
+| removeAll            |                  | removeAll      |
+| assign               |                  | assign         |
+| revoke               |                  | revoke         |
+| revokeAll            |                  | revokeAll      |
+|                      |                  |                |
+| getRole              | getRole          |                |
+|                      | # isRole         |                |
+| getRoles             | getRoles         |                |
+| getRolesByUser       |                  | getRolesByUser |
+| getChildRoles        |                  | getChildRoles  |
+|                      | setDefaultRoles  |                |
+|                      | getDefaultRoles  |                |
+|                      | getDefaultRoleInstances |         |
+| removeAllRoles       |                  | removeAllRoles |
+|                      |                  |                |
+| getPermission        | getPermission    |                |
+| getPermissions       | getPermissions   |                |
+| getPermissionsByRole |                  | getPermissionsByRole            |
+| getPermissionsByUser |                  | getPermissionsByUser            |
+|                      |                  | # getDirectPermissionsByUser    |
+|                      |                  | # getInheritedPermissionsByUser |
+| removeAllPermissions |                  | removeAllPermissions            |
+|                      | # isPermission   |                |
+|                      |                  |                |
+| getRule              |                  | getRule        |
+| getRules             |                  | getRules       |
+|                      | _addRule_        | # addRule      |
+|                      | _removeRule_     | # removeRule   |
+|                      | _updateRule_     | # updateRule   |
+|                      | createRule       |                |
+|                      | # executeRule    |                |
+|                      | # isRule         |                |
+|                      |                  | removeAllRules |
+|                      |                  |                |
+| canAddChild          |                  | canAddChild    |
+| addChild             |                  | addChild       |
+| removeChild          |                  | removeChild    |
+| removeChildren       |                  | removeChildren |
+| hasChild             |                  | hasChild       |
+| getChildren          |                  | getChildren    |
+|                      |                  |                |
+| getAssignment        |                  | getAssignment  |
+| hasAssignments       |                  |                |
+|                      | # hasNoAssignments |              |
+| getAssignments       |                  | getAssignments |
+| removeAllAssignments |                  | removeAllAssignments |
+|                      |                  |                |
+|                      | _getItem_        | # getItem      |
+|                      | _getItems_       | # getItems     |
+|                      | _addItem_        | # addItem      |
+|                      | _removeItem_     | # removeItem   |
+|                      | _updateItem_     | # updateItem   |
+|                      | # isItem         |                |
+|                      |                  | # populateItem         |
+|                      |                  | removeAllItems         |
+|                      |                  |                        |
+| getUserIdsByRole     |                  | getUserIdsByRole       |
+|                      |                  |                        |
+|                      | # createItemRuleIfNotExist |              |
+|                      |                  |   userHasPermission    |
+|                      |                  | # checkAccessFromCache |
+|                      |                  | # checkAccessRecursive |
+|                      |                  |                        |
+|                      |                  |                        |
+|                      |                  | # getChildrenList      |
+|                      |                  | # getChildrenRecursive |
+|                      |                  | # detectLoop           |
+|                      |                  |                        |
+|                      |                  | invalidateCache        |
+|                      |                  | loadFromCache          |
+|                      |                  | - isEmptyUserId        |
 
 
 
